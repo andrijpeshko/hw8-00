@@ -33,10 +33,10 @@ function onFormInput(e) {
 function onFormSubmit(e) {
   e.preventDefault();
  
-  const value = JSON.stringify(FormData);
+   const value = JSON.stringify(FormData);
   localStorage.setItem(STORAGE_KEY, value);
   refs.form.reset();
-  STORAGE_KEY.removeItem('feedback-form-state');
+ STORAGE_KEY.removeItem('feedback-form-state');
 }
 
 function populateMessageEmail() {
